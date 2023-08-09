@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="bundle.js" defer></script>
+</head>
+<body>
+  <header>
+    <h2>Weather Forecast</h2>
+    <form action="/" class="searchDiv">
+      <input type="text" placeholder="Search Location" name="query" id="search">
+      <input type="submit" name="search" value="" id="submit">
+    </form>
+  </header>
+  <main>
+    <div class="summary">
+      <ul class="summary">
+        <li><h1 class="salut" style="color:black"></h1></li>
+        <li><img src="assets/location.svg" alt="" class="city"><h2 class="city"></h2></li>
+        <li><img src="assets/calendar.svg" alt="" class="date"><span class="date"></span></li>
+        <li><img src="assets/clock.svg" alt="" class="time"><span class="time"></span></li>
+        <li><img src="assets/thermostat.svg" class="temp"><h2 class="temp"></h2></li>
+      </ul>
+    </div>
+    <div class="details">
+      <ul class="desc">
+        <li><h1 class="condition"></h1></li>
+        <li><img src="" alt="" class="condition"></li>
+        <li><img src="assets/cloud.svg" alt="" class="cloud"><span class="cloud"></span></li>
+        <li><img src="assets/humidity.svg" alt="" class="humidity"><span class="humidity"></span></li>
+        <li><img src="assets/wind.svg" alt="" class="wind"><span class="wind"></span></li>
+      </ul>
+    </div>
+  </main>
+  <footer>
+    <p>Created by <span><a href="/">Fideldemoz</a></span></p>
+    Powered by <a href="https://www.weatherapi.com/" title="Free Weather API">WeatherAPI.com</a>
+  </footer>
+</body>
+</html>
