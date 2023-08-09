@@ -62,7 +62,7 @@ class Weather {
   }
 
   async current () {
-    const url = `http://api.weatherapi.com/v1/forecast.json?q=${this.city}&key=${this.key}&days=3`
+    const url = `https://api.weatherapi.com/v1/forecast.json?q=${this.city}&key=${this.key}&days=3`
     const request = await fetch(url, { mode: 'cors' })
     const response = await request.json()
     return response
